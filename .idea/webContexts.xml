@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/app/backendIndex.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/app" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/app/check.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/app" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/backend/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/backend" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/common" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/add.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/dev" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/apppage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/dev" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/detail.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/dev" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/edit.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/dev" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jsp/dev" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/template.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>
