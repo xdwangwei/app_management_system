@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ww.mapper.AppVersionMapper">
+
+    <sql id="base_columns">
+        id, app_id, version_no, version_info, publish_status, download_link,
+        version_size, created_by, creation_date, modify_by, modify_date,
+        apk_locpath, apk_filename
+    </sql>
+    <select id="selectVersionInfoByAppId" resultType="com.ww.pojo.AppVersion">
+        select
+        <include refid="base_columns"></include>
+        from app_version
+        where app_id = #{app_id}
+    </select>
+</mapper>

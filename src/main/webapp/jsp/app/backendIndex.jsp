@@ -262,6 +262,7 @@
             var totalPages = '${pageInfo.pages}'; // 总页数
             switch (v) {
                 case  "first":
+                    if(currPage == 1) return;
                     pageNum = 1;
                     break;
                 case  "prev":
@@ -279,6 +280,7 @@
                     }
                     break;
                 case  "last":
+                    if (currPage == totalPages) return;
                     pageNum = totalPages;
                     break;
             }

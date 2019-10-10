@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ww.mapper.DataDictionaryMapper">
+
+<!-- List<DataDictionary> selectAllFlatform(); -->
+
+  <sql id="Base_Column_List">
+    id, type_code, type_name, value_id, value_name, created_by, creation_date, modify_by, 
+    modify_date
+  </sql>
+
+  <select id="selectAllFlatform" resultType="com.ww.pojo.DataDictionary">
+    select 
+    <include refid="Base_Column_List" />
+    from data_dictionary
+    where type_code = 'APP_FLATFORM'
+  </select>
+
+  <!-- List<DataDictionary> selectAllAppStatus(); -->
+  <select id="selectAllAppStatus" resultType="com.ww.pojo.DataDictionary">
+    select
+    <include refid="Base_Column_List" />
+    from data_dictionary
+    where type_code = 'APP_STATUS'
+  </select>
+
+</mapper>

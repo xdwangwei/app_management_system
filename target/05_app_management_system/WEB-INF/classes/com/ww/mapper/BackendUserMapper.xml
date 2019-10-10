@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ww.mapper.BackendUserMapper">
+
+  <sql id="Base_Column_List">
+    id, backend_code, backend_name, backend_type, created_by, creation_date, modify_by, modify_date,
+    backend_password
+  </sql>
+
+  <!-- BackendUser selectByCodeAndPwd(BackendUser backendUser); -->
+  <select id="selectByCodeAndPwd" parameterType="com.ww.pojo.BackendUser" resultType="com.ww.pojo.BackendUser">
+    select
+    <include refid="Base_Column_List" />
+    from backend_user
+    where backend_code = #{backendCode} and backend_password = #{backendPassword}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from backend_user
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+
+  <insert id="insert" parameterType="com.ww.pojo.BackendUser">
+    insert into backend_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="backendCode != null">
+        backend_code,
+      </if>
+      <if test="backendName != null">
+        backend_name,
+      </if>
+      <if test="backendType != null">
+        backend_type,
+      </if>
+      <if test="createdBy != null">
+        created_by,
+      </if>
+      <if test="creationDate != null">
+        creation_date,
+      </if>
+      <if test="modifyBy != null">
+        modify_by,
+      </if>
+      <if test="modifyDate != null">
+        modify_date,
+      </if>
+      <if test="backendPassword != null">
+        backend_password,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="backendCode != null">
+        #{backendCode,jdbcType=VARCHAR},
+      </if>
+      <if test="backendName != null">
+        #{backendName,jdbcType=VARCHAR},
+      </if>
+      <if test="backendType != null">
+        #{backendType,jdbcType=BIGINT},
+      </if>
+      <if test="createdBy != null">
+        #{createdBy,jdbcType=BIGINT},
+      </if>
+      <if test="creationDate != null">
+        #{creationDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyBy != null">
+        #{modifyBy,jdbcType=BIGINT},
+      </if>
+      <if test="modifyDate != null">
+        #{modifyDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="backendPassword != null">
+        #{backendPassword,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.ww.pojo.BackendUser">
+    update backend_user
+    <set>
+      <if test="backendCode != null">
+        backend_code = #{backendCode,jdbcType=VARCHAR},
+      </if>
+      <if test="backendName != null">
+        backend_name = #{backendName,jdbcType=VARCHAR},
+      </if>
+      <if test="backendType != null">
+        backend_type = #{backendType,jdbcType=BIGINT},
+      </if>
+      <if test="createdBy != null">
+        created_by = #{createdBy,jdbcType=BIGINT},
+      </if>
+      <if test="creationDate != null">
+        creation_date = #{creationDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyBy != null">
+        modify_by = #{modifyBy,jdbcType=BIGINT},
+      </if>
+      <if test="modifyDate != null">
+        modify_date = #{modifyDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="backendPassword != null">
+        backend_password = #{backendPassword,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+</mapper>
