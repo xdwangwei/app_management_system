@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="476bc5ba-18ca-4afa-a3f2-d45aa1ec8536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ssm_app_management_system.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ssm_appinfodb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/05_app_management_system.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/05_app_management_system.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/05_app_management_system/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -328,7 +330,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561888053809</updated>
-      <workItem from="1570718169170" duration="852000" />
+      <workItem from="1570718169170" duration="1588000" />
     </task>
     <servers />
   </component>
